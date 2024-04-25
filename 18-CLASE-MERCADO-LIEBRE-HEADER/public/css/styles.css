@@ -1,0 +1,29 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+header{
+    background-color: #EAC926;;
+    font-size: 12px; 
+}
+.titulares{
+    font-size: 24px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.precios{
+    font-size: 18px;
+}
+.boton-bar{
+    background-color: #1259c3;
+    border: 0;
+    color: #ebebeb;
+    border-radius: 2px;
+}
+.icon-footer{
+    color: #1259c3;
+}
+.text-footer h3{
+    font-size: 24px;
+}
