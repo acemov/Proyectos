@@ -1,0 +1,104 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+html{
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+    font-size: 12px; 
+}
+.titulares{
+    font-size: 24px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.precios{
+    font-size: 18px;
+}
+.boton-bar{
+    background-color: #1259c3;
+    border: 0;
+    color: #ebebeb;
+    border-radius: 2px;
+}
+.icon-footer{
+    color: #1259c3;
+}
+.text-footer h3{
+    font-size: 24px;
+}
+
+/* ---- Diseño adaptativo ----- */
+main{
+    width: 90%;
+    margin: auto;
+}
+section article{
+    margin: 10px;
+    background-color: white;
+}
+.descrip{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+img{
+    width: 100%;
+}
+.fa-truck, .descuentos{
+    color: #39b54a;
+}
+h3{
+    color: #666;
+}
+.titus{
+    background-color: #ebebeb;
+    margin: 20px 0;
+}
+footer p, footer h3{
+    text-align: center;
+}
+footer ul{
+    padding: 0;
+}
+
+.icon-footer{
+    font-size: 2em;
+    display: block;
+}
+.text-footer div{
+    width: fit-content;
+    margin: auto;
+}
+.site, .login{
+    display: none;
+}
+.frase-h , .boton-burger{
+    width: fit-content;
+    margin: auto;
+}
+.frase-h p{
+    text-align: center;
+}
+.boton-burger{
+    height: 20px;
+}
+@media (min-width: 361px){
+    .site, .login{
+        display: block;
+    }
+
+    header button{
+        display: none;
+    }
+    header{
+        padding: 15px;
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+@media (min-width: 769px){
+}
