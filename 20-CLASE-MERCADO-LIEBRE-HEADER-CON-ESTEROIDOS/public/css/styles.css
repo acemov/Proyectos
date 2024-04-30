@@ -9,8 +9,50 @@ html {
 }
 
 /* - - - - - - - - - - - - - Header - - - - - - - - - - - - -*/
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
 .site{
     display: none;
+}
+.logo{
+    width: 150px;
+}
+header div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-top-2{
+    width: 45%
+}
+header div input{
+    width: 30%;
+}
+.boton-bar{
+    display: block;
+    margin: auto;
+    background-color: #03264C;
+    border: 0px;
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+.fa-bars{
+    color: #ebebeb;
+}
+div p{
+    text-align: center;
+    width: 100%;
+}
+.main-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-bar i{
+    display: block;
 }
 /* - - - - - - - - - - - - -Main - - - - - - - - - - - - -*/
 .titulares {
@@ -88,7 +130,11 @@ footer ul {
 
 @media (min-width: 361px) {
 
+    /* - - - - - - - - - - - - - Header - - - - - - - - - - - - -*/
 
+
+
+    /* - - - - - - - - - - - - - MAIN - - - - - - - - - - - - -*/
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
