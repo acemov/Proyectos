@@ -41,7 +41,7 @@ header div input{
 .fa-bars{
     color: #ebebeb;
 }
-div p{
+.main-text{
     text-align: center;
     width: 100%;
 }
@@ -130,14 +130,37 @@ footer ul {
 
 @media (min-width: 361px) {
 
-    /* - - - - - - - - - - - - - Header - - - - - - - - - - - - -*/
-
-
-
+    
     /* - - - - - - - - - - - - - MAIN - - - - - - - - - - - - -*/
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media (min-width: 769px) {}
+@media (min-width: 769px) {
+    /* - - - - - - - - - - - - - Header - - - - - - - - - - - - -*/
+    .div-main , .site{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        border: #1259c3 dashed 4px;
+        margin: auto;
+    }
+    .boton-bar{
+        display: none;
+    }
+    .site{
+        display: flex;
+        justify-content: space-between;
+    }
+    .site1 , .site2{
+        display: flex;
+    }
+    .site1 li, .site2 li{
+        display: flex;
+        padding: 0px 5px;
+    }
+    .main-text, .main-top{
+        width: 50%;
+    }
+}
