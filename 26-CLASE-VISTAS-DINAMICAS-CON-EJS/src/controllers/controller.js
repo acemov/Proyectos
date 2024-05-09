@@ -3,16 +3,43 @@ const path = require("path")
 const app = express()
 
 const vistas = {
-    index: (req,res)=>{
+    index: (req, res) => {
         res.render("../views/products/index")
     },
-    menu: (req,res)=>{
-        let plato ={
-            nombre: "Carpaccio fresco",
-            descripcion: "Hola que tal?unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-            precio: "U$S 65.50 "
-        }
-        res.render("../views/products/detalleMenu",{"plato":plato})
+    menu: (req, res) => {
+        let id = req.params.idProducto
+        let plato = [
+            {
+                nombre: "Carpaccio fresco",
+                descripcion: "Entrada Carpaccio de salmón con cítricos ",
+                precio: "U$S 65.50",
+                img:"Carpaccio-de-salmon.jpg",
+                id:0 //para identificar el producto cuando se ingresa el input en el link
+            },
+            {
+                nombre: "Risotto de berenjena",
+                descripcion: "Risotto de berenjena y queso de cabra",
+                precio: "U$S 47.00",
+                img:"Risotto-berenjena-queso-cabra.jpg",
+                id:1 //para identificar el producto cuando se ingresa el input en el link
+            },
+            {
+                nombre: "Mousse de arroz",
+                descripcion: "Mousse de arroz con leche y aroma de azahar ",
+                precio: "U$S 27.50",
+                img:"Mousse-de-arroz-con-leche.jpg",
+                id:2 //para identificar el producto cuando se ingresa el input en el link
+            },
+            {
+                nombre: "Espárragos blancos",
+                descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
+                precio: "U$S 37.50",
+                img:"esparragos.png",
+                id:3 //para identificar el producto cuando se ingresa el input en el link
+            }
+        ]
+
+        res.render("../views/products/detalleMenu", { "plato": plato, "id":id})
     }
 }
 module.exports = vistas
